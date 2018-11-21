@@ -1,0 +1,64 @@
+.BigButton
+  position: absolute
+  width: 120px
+  height: 120px
+  bottom: 32px
+  left: 50%
+  transform: translateX(-50%) scale(1)
+  border-radius: 50%
+  cursor: pointer
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: url("../images/SwingometerButton.svg") center center no-repeat
+  background-size: contain
+  box-shadow: 0 4px 24px rgba(8, 9, 16, .6)
+  margin-top: 0
+  z-index: 2000
+  transition: width 200ms ease-out, height 200ms ease-out, box-shadow 200ms ease-out
+  animation: SwingometerButtonBreathe 3000ms infinite ease-out
+  animation-delay: .5s
+
+  &:active
+    width: 110px
+    height: 110px
+    box-shadow: 0 0 16px rgba(8, 9, 16, .8)
+    transition: width 100ms ease-in, height 100ms ease-in, box-shadow 100ms ease-in
+
+  &.analyze
+    animation: SwingometerButtonSpin 800ms infinite linear
+    animation-delay: 0ms
+
+  &.result
+    animation: SwingometerButtonResultIn 300ms ease 100ms
+    animation-fill-mode: forwards
+    &:active
+      width: 56px
+      height: 56px
+      bottom: 34px
+
+  &.error
+    animation: none
+    background-image: url("../images/SwingometerButton-disabled.svg")
+    box-shadow: 0 0
+    cursor: auto
+    pointer-events: none
+
+@keyframes SwingometerButtonBreathe
+  0%
+    transform: translateX(-50%) scale(1)
+  50%
+    transform: translateX(-50%) scale(.9)
+  100%
+    transform: translateX(-50%) scale(1)
+
+@keyframes SwingometerButtonSpin
+  0%
+    transform: translateX(-50%) rotate(0deg)
+  to
+    transform: translateX(-50%) rotate(360deg)
+
+@keyframes SwingometerButtonResultIn
+  to
+    width: 64px
+    height: 64px
+    bottom: 18px

@@ -1,0 +1,20 @@
+.LockKeyboard
+  position: absolute
+  width: 100%
+  bottom: 64px
+  text-align: center
+
+  &.error
+    animation: LockKeyboardError .5s linear
+
+@keyframes LockKeyboardError
+  8%, 41%
+    transform: translateX(-10px)
+  25%, 58%
+    transform: translateX(10px)
+  75%
+    transform: translateX(-5px)
+  92%
+    transform: translateX(5px)
+  0%, 100%
+    transform: translateX(0)

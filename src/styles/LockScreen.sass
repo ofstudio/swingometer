@@ -1,0 +1,43 @@
+.LockScreen
+  position: fixed
+  width: 100vw
+  height: 100vh
+  z-index: 10000
+  background: linear-gradient(to bottom, rgba(19, 19, 38, 1) 0%, rgba(38, 43, 66, 1) 100%)
+  background-size: cover
+  top: 0
+  left: 0
+  opacity: 1
+  backdrop-filter: blur(50px)
+  &:before
+    content: ''
+    position: fixed
+    width: 100%
+    height: 100%
+    opacity: .4
+    background: url("../images/app-background.png") center center no-repeat
+    background-size: cover
+
+  &.success
+    animation: LockScreenUnlock 400ms ease-out
+    animation-delay: 400ms
+    animation-fill-mode: forwards
+
+  .lock-message
+    display: block
+    position: absolute
+    top: 17vh
+    left: 40px
+    right: 40px
+    text-align: center
+    font-size: 18px
+    font-weight: 400
+    line-height: 22px
+    color: #C6E9FF
+    &.error
+      color: #DB3947
+
+@keyframes LockScreenUnlock
+  to
+    top: -100%
+    opacity: .8

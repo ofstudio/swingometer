@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>SwingometerButton-disabled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="25.9708107%" y1="83.9714596%" x2="66.4772833%" y2="18.3611811%" id="linearGradient-1">
+            <stop stop-color="#25406B" offset="2.89243136%"></stop>
+            <stop stop-color="#1E3861" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.32212054%" x2="50%" y2="96.5317919%" id="linearGradient-2">
+            <stop stop-color="#324F7F" offset="0%"></stop>
+            <stop stop-color="#1A3052" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.697056362">
+        <g id="Error" transform="translate(-120.000000, -487.000000)">
+            <g id="button-disabled" transform="translate(120.000000, 486.000000)">
+                <circle id="Oval-2" stroke="url(#linearGradient-2)" fill="url(#linearGradient-1)" opacity="0.600223214" cx="60" cy="60.9960938" r="59.5"></circle>
+                <path d="M76.3539397,43.9977123 C85.0873796,54.7563573 86.7788101,70.2087101 79.4371858,82.9247274 C73.2323431,93.6716428 62.108739,99.8082494 50.551836,100.132506 L48.6217764,100.132506 C43.0953422,99.9773166 37.5270765,98.4856943 32.4031136,95.5273615 L43.6460716,76.0539563 C34.9127084,65.2953212 33.2214187,49.8430203 40.5630379,37.1271846 C46.9349797,26.0904405 58.4945236,19.9160937 70.3835637,19.9057617 C76.2749411,19.9108298 82.183839,21.3991638 87.5968864,24.5243267 L76.3539397,43.9977123 Z M76.3539397,43.9977123 C73.7768561,40.8230265 70.5865996,38.0570386 66.8343279,35.8906551 L43.6460716,76.0539563 C46.2231405,79.2286488 49.4133915,81.9946446 53.1656721,84.1610331 L76.3539397,43.9977123 Z" id="Logos/Swingometer/SignWhite" fill="#FFFFFF" opacity="0.300055804"></path>
+            </g>
+        </g>
+    </g>
+</svg>

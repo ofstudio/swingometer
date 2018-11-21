@@ -1,0 +1,66 @@
+.ProgressBar
+
+  $progress-hl-color: rgba(78, 255, 255, 1)
+  $progress-main-color: rgba(41, 30, 255, 1)
+  $analyze-speed: 3s
+  $analyze-opacity: 0.7
+  $calculate-speed: .7s
+  $calculate-opacity: 0.4
+
+  display: none
+  width: 256px
+  height: 256px
+  border-radius: 50%
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%) translateZ(0)
+  background-color: transparent
+  &:before, &:after
+    position: absolute
+    content: ''
+  &:before
+    width: 128px
+    height: 256px
+    background: conic-gradient(at 100% 50%, $progress-main-color 180deg, $progress-main-color 1turn)
+    border-radius: 256px 0 0 128px
+    top: 0
+    left: 0
+    transform-origin: 128px 128px
+    animation: ProgressBarSpinner infinite ease
+  &:after
+    width: 128px
+    height: 256px
+    background: conic-gradient(at 0 50%, $progress-hl-color 0deg, $progress-main-color 0.5turn)
+    border-radius: 0 140px 140px 0
+    top: 0
+    left: 128px
+    transform-origin: 0 128px
+    animation: ProgressBarSpinner infinite ease
+
+  &.start, &.result
+    display: none
+
+  &.analyze
+    display: block
+    opacity: $analyze-opacity
+  &.analyze:before
+    animation-duration: $analyze-speed
+    animation-delay: $analyze-speed/4
+  &.analyze:after
+    animation-duration: $analyze-speed
+
+  &.calculate
+    display: block
+    opacity: $calculate-opacity
+  &.calculate:before
+    animation-duration: $calculate-speed
+    animation-delay: $calculate-speed/4
+  &.calculate:after
+    animation-duration: $calculate-speed
+
+@keyframes ProgressBarSpinner
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)

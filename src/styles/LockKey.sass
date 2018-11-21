@@ -1,0 +1,28 @@
+.LockKey
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  display: inline-block
+  width: 72px
+  height: 72px
+  border-radius: 36px
+  border: solid 1px rgba(149, 192, 248, .25)
+  margin: 10px 12px
+  cursor: pointer
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0)
+  transition: box-shadow 300ms ease-out
+  &:active
+    border-color: rgba(149, 192, 248, .9)
+    box-shadow: 0 0 8px rgba(255, 255, 255, .25)
+    transition: box-shadow 50ms ease-in
+  &.error, &.success
+    cursor: auto
+    pointer-events: none
+
+  .digit
+    display: block
+    margin-top: 36px
+    font-size: 28px
+    font-weight: 300
+    line-height: 0
+    text-align: center
+    color: rgba(198, 233, 255, .5)

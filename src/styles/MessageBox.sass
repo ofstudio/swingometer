@@ -1,0 +1,45 @@
+.MessageBox
+  margin: 30px 40px 0
+  text-align: center
+
+  .title
+    display: block
+    font-size: 16px
+    line-height: 18px
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: 0.5px
+
+  .message
+    margin-top: 10px
+    display: block
+    color: #718FAF
+    font-size: 14px
+    font-weight: 400
+    line-height: 16px
+    letter-spacing: 0.35px
+
+  &.start
+    .title
+      color: #00DEFF
+
+  &.error
+    .title
+      color: #506277
+
+  &.analyze, &.calculate
+    .title
+      margin-top: 48px
+      font-size: 14px
+      line-height: 16px
+      letter-spacing: 0.62px
+    .message
+      display: none
+
+  &.analyze
+    .title
+      color: #EC4BD8
+
+  &.calculate
+    .title
+      color: #ECBB4B

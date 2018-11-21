@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    image: swingometer
+    restart: always
+    networks:
+      web_local:
+        aliases:
+        - swingometer_web
+
+networks:
+  web_local:
+    external: true

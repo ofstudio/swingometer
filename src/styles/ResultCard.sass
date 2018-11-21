@@ -1,0 +1,92 @@
+.ResultCard
+  position: absolute
+  top: 70px
+  bottom: 50px
+  left: 20px
+  right: 20px
+  border-radius: 40px
+  background-color: #233E67
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .2)
+  overflow: hidden
+  animation: ResultCardIn 300ms ease-in
+
+  .captured-image
+    width: 100%
+    height: 184px
+    background: center center no-repeat
+    background-size: cover
+
+  h1
+    margin: 12px 20px 0
+    font-weight: 400
+    font-size: 25px
+    letter-spacing: 2.9px
+    color: #00DEFF
+    text-align: center
+    text-transform: uppercase
+
+  h2
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 700
+    color: #ffffff
+    text-align: center
+    letter-spacing: .86px
+    margin: 25px 20px 0
+    line-height: 25px
+
+    .score
+      display: block
+      margin-left: 20px
+      font-size: 64px
+      letter-spacing: 1.8px
+      font-weight: 300
+
+      .percent
+        font-size: 28px
+        font-weight: 500
+        position: relative
+        top: -24px
+
+  .score-emo
+    margin: 7px auto 0
+    width: 48px
+    height: 48px
+    background: no-repeat center center
+    background-size: cover
+    transform: scale(0.1)
+    opacity: 0
+    animation: ResultEmojiIn 700ms ease 800ms
+    animation-fill-mode: forwards
+
+    &.trophy
+      background-image: url("../images/emo-trophy.png")
+    &.cool
+      background-image: url("../images/emo-cool.png")
+    &.ok
+      background-image: url("../images/emo-ok.png")
+    &.facepalm
+      background-image: url("../images/emo-facepalm.png")
+    &.poo
+      background-image: url("../images/emo-poo.png")
+
+  p
+    margin: 8px 20px 0
+    color: #ABDEFF
+    font-size: 16px
+    line-height: 22px
+    font-weight: 400
+    text-align: center
+
+@keyframes ResultCardIn
+  0%
+    opacity: 0
+    transform: scale(0.6)
+  100%
+    opacity: 1
+    transform: scale(1)
+
+@keyframes ResultEmojiIn
+  to
+    transform: scale(1)
+    opacity: 1

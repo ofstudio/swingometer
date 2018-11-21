@@ -2,15 +2,16 @@
 
 Swing Content neural network. Also my first React project.
 
+![Swing-o-meter](https://raw.githubusercontent.com/ofstudio/swingometer/master/public/swingometer-cover.jpg)
+
 ## Demo
 
 [swingometer.wcs.life](https://swingometer.wcs.life)
 
----
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 

@@ -1,7 +1,6 @@
 {
   "short_name": "Swing-o-meter",
   "name": "Swing-o-meter",
-  "version": "0.1.0-beta",
   "icons": [
     {
       "src": "icon-192x192.png",
@@ -19,7 +18,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#131326",

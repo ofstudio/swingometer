@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -e
 
-DOCKER_MACHINE=roofbeam.scaleway
+DOCKER_MACHINE=oliver.scaleway
 export COMPOSE_PROJECT_NAME=swingometer
 
 echo "Building image"

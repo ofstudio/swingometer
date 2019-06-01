@@ -5,10 +5,16 @@ services:
     image: swingometer
     restart: always
     networks:
-      web_local:
+      web:
         aliases:
         - swingometer_web
+    labels:
+      - traefik.enable=true
+      - traefik.backend=swingometer_web
+      - traefik.port=80
+      - traefik.frontend.entryPoints=https
+      - traefik.frontend.rule=Host:swingometer.wcs.life
 
 networks:
-  web_local:
+  web:
     external: true

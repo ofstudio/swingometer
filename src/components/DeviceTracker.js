@@ -58,7 +58,7 @@ export default function DeviceTracker({dispatch}) {
           timings.updateScoreInterval
         )
       }
-      else {
+      else { // todo remove check & move updateScoreIntervalHandler to useEffect scope & check other handlers
         console.log('Device not supported')
         dispatch({
           type: 'error',

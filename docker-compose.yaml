@@ -2,18 +2,17 @@ version: '3'
 
 services:
   web:
-    image: swingometer
+    build: .
     restart: always
     networks:
-      web:
-        aliases:
-        - swingometer_web
+      - web
     labels:
       - traefik.enable=true
-      - traefik.backend=swingometer_web
-      - traefik.port=80
-      - traefik.frontend.entryPoints=https
-      - traefik.frontend.rule=Host:swingometer.wcs.life
+      - traefik.http.routers.swingometer-wcs-life.rule=Host(`swingometer.wcs.life`)
+      - traefik.http.routers.swingometer-wcs-life.entrypoints=websecure
+      - traefik.http.routers.swingometer-wcs-life.tls.options=default
+      - traefik.http.routers.swingometer-wcs-life.tls.certresolver=le
+      - traefik.http.routers.swingometer-wcs-life.middlewares=securityHeaders@file
 
 networks:
   web:
